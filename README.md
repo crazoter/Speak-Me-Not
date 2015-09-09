@@ -16,6 +16,8 @@ First, you need to setup a virtual audio cable to act as the virtual microphone 
 
 Next, you will need to install (if you haven't) and configure VLC to use the virtual audio cable.
 
+Note: I realize portable VLCs may exist so that installation (and configuration) of VLC would not be required by the user but I have not found one which is suitable.
+
 A detailed step by step guide:
 
 #Setup Guide
