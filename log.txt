@@ -1,0 +1,287 @@
+/*
+The MIT License (MIT)
+
+Copyright (c) 2013 Crazoter
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+Runs on: Windows 7 64 bit (will run on almost all windows OS anyway but Win7 64 bit is in dire need)
+
+Guide - VERSION 2.0
+
+	Part 1: Setting up the Virtual Audio Cable
+	---------------------------------
+	1.Download and install the driver from VB-AUDIO (zip file also included in guide pack)
+		http://vb-audio.pagesperso-orange.fr/Cable/
+	2.Play some music.
+	3.Control Panel > Sound 
+		OR
+	  Taskbar > Right click volume control > Sounds
+
+	4.Select the Playback tab.
+	5.Right click CABLE Input and Set as default device. The music should have stopped (as with all sound). If this doesn't happen, reboot and try again.
+	6.Select the Recording tab. CABLE Output should be seeing some action (see the bar).
+	7.Lets say you want to listen to what you're playing through this audio cable - 
+		Right click CABLE Output and select properties
+		Listen tab
+		Check Listen to this device
+		Select your speaker as the device
+
+	Step 7 can be used with any recording device (e.g. your mic, so you can do multiple things at 1 time like playing music and speaking while on Skype or gaming)
+
+	Part 2: Setting up the VLC player
+	---------------------------------
+	1.Install VLC media player (tested on 2.1.2 Rincewind)
+	2.Tools > Preferences >
+							 Interface > Privacy / Network Interaction
+							 			Uncheck Save recently played items (OPTIONAL but recommended)
+							 Audio > Output 
+										Output Module: DirectX audio output (or waveout)
+										Device: The virtual audio cable configured (CABLE Output)
+	3.Press the save button & close the VLC player. THIS IS IMPORTANT AS YOU NEED TO RESTART VLC MEDIA PLAYER FOR CHANGES TO TAKE EFFECT.
+	4.Play some music on the VLC player (if you don't got any on your computer, Media > Open Network Stream > paste in youtube link and press play). It should play music through the CABLE virtual audio cable.
+
+	Part 3: Setting up the software
+	--------------------------------
+	1.Navigate to your vlc.exe in your Program Files (32 bit), VideoLAN folder.
+	2.Create a shortcut to vlc.exe (right click vlc.exe and create shortcut).
+	3.Name the shortcut "vlcLNK".
+	4.Place the shortcut in the same folder as speakMeNot.exe.
+
+	You're done! 
+
+Guide - VERSION 1.0
+
+	Part 1: Setting up the Virtual Audio Cable
+	---------------------------------
+	1.Download and install the driver from VB-AUDIO (zip file also included in guide pack)
+		http://vb-audio.pagesperso-orange.fr/Cable/
+	2.Play some music.
+	3.Control Panel > Sound 
+		OR
+	  Taskbar > Right click volume control > Sounds
+
+	4.Select the Playback tab.
+	5.Right click CABLE Input and Set as default device. The music should have stopped (as with all sound). If this doesn't happen, reboot and try again.
+	6.Select the Recording tab. CABLE Output should be seeing some action (see the bar).
+	7.Lets say you want to listen to what you're playing through this audio cable - 
+		Right click CABLE Output and select properties
+		Listen tab
+		Check Listen to this device
+		Select your speaker as the device
+
+	Step 7 can be used with any recording device (e.g. your mic, so you can do multiple things at 1 time like playing music and speaking while on Skype or gaming)
+
+	Part 2: Setting up the VLC player
+	---------------------------------
+	1.Install VLC media player (designed for 2.1.2 Rincewind, default interface)
+	2.Tools > Preferences >
+							 Interface > Privacy / Network Interaction
+							 			Uncheck Save recently played items (OPTIONAL but recommended)
+							 Audio > Output 
+										Output Module: DirectX audio output (or waveout)
+										Device: The virtual audio cable configured (CABLE Output)
+	3.Press the save button & close the VLC player. THIS IS IMPORTANT AS YOU NEED TO RESTART VLC MEDIA PLAYER FOR CHANGES TO TAKE EFFECT.
+	4.Clear your network stream history by going to the VLC folder in your application data. (OPTIONAL)
+		https://forum.videolan.org/viewtopic.php?f=14&t=75499
+		http://sirusdark.wordpress.com/2013/01/22/how-to-clear-vlcs-network-history-list/
+	5.Play some music on the VLC player (if you don't got any on your computer, Media > Open Network Stream > paste in youtube link and press play). It should play music through the CABLE virtual audio cable.
+
+	Part 3: Running the software
+	--------------------------------
+	1.Launch VLC player.
+	2.Launch my tool exe. (Step 1 and 2 sequence not important).
+	3.Use my tool!
+
+
+Enjoy ;) 
+Crazoter 2013
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Work log
+
+	Google Translate
+
+	Virtual Audio Streaming
+
+	Indie Volume
+
+	http://pirateshore.org/?load=/torrent/4915046/Indie_Volume_3.3.79.146___serial
+
+	http://vb-audio.pagesperso-orange.fr/Cable/
+
+	VLC
+	Change audio device
+	http://www.overclock.net/t/1241730/how-to-change-default-audio-device-in-vlc
+
+	<object type="application/x-vlc-plugin" data="http://server.example.com/video1.mpeg" width="400" height="300" id="video1">
+	     <param name="movie" value="http://server.example.com/video1.mpeg"/>
+	     <embed type="application/x-vlc-plugin" name="video1"
+	     autoplay="yes" loop="no" width="400" height="300"
+	     target="http://server.example.com/video1.mpeg" />
+	     <a href="http://server.example.com/video1.mpeg">Download Video1</a>
+	</object>
+
+	1.Set the VLC preferences (CTRL-P)
+		Audio
+			Output
+				Output Module - WaveOut audio output
+				Device - Whatever you have tht can be "converted" to recording device
+	2.Save and reload VLC, unplug headsets etc
+	3.Ensure autoplay is on
+	4.Leave window open 
+	5.Tools > Preferences > Uncheck save recently played items 
+	6.Clear your shit 
+	https://forum.videolan.org/viewtopic.php?f=14&t=75499
+	http://sirusdark.wordpress.com/2013/01/22/how-to-clear-vlcs-network-history-list/
+	7.Restart VLC
+
+	Coding
+
+	Special Key to toggle chat (Clear if not sent)
+	maybe display text
+	If toggled, Enter will send text for processing and untoggle
+	urlencode text (http://stackoverflow.com/questions/154536/encode-decode-urls-in-c)
+	wrap text with url and shit (http://translate.google.com/translate_tts?ie=UTF-8&q=) URL_ENCODED_TEXT (&tl=en&prev=input.mpeg)
+	e.g.
+	http://translate.google.com/translate_tts?ie=UTF-8&q=shit&tl=en&prev=input.mpeg
+
+	Get to window with FindWindow or something
+	CTRL+N (open network stream)
+	type in the text 
+	Enter
+
+	MISSION COMPLETE
+
+	FindWindow  (name is VLC media player)
+
+	http://msdn.microsoft.com/en-us/library/windows/desktop/ms633499(v=vs.85).aspx
+
+	Sending text
+	http://stackoverflow.com/questions/5205728/sending-text-keystrokes-to-unselected-window
+
+	http://msdn.microsoft.com/en-us/library/bb775458%28VS.85%29.aspx
+
+	http://stackoverflow.com/questions/2113950/how-to-send-keystrokes-to-a-window
+
+	http://batchloaf.wordpress.com/2012/10/18/simulating-a-ctrl-v-keystroke-in-win32-c-or-c-using-sendinput/
+
+	http://stackoverflow.com/questions/13280228/postmessage-to-emulate-input-in-c	
+
+	http://stackoverflow.com/questions/3772233/win32-setforegroundwindow-unreliable
+
+	http://social.msdn.microsoft.com/Forums/en-US/e11f80ab-4d82-4449-89b2-cee1d4b2972a/pasting-with-postmessage
+
+	http://programmersheaven.com/discussion/178727/obtaining-a-handle-to-a-menu-possible
+
+	http://stackoverflow.com/questions/10619301/sending-receiving-a-string-through-postmessage
+
+	http://www.cplusplus.com/forum/windows/43402/
+
+	http://stackoverflow.com/questions/5085577/sendmessage-backspace-not-working
+
+	http://www.pinvoke.net/default.aspx/user32.setforegroundwindow
+
+	http://superuser.com/questions/427268/how-to-execute-shortcut-from-command-line-in-windows-7
+
+	http://forums.codeguru.com/showthread.php?451193-Run-a-cmd-command-from-a-C-Program.
+
+	http://www.videolan.org/doc/vlc-user-guide/en/ch04.html
+	https://forum.videolan.org/viewtopic.php?f=2&t=100732
+
+	https://forum.videolan.org/viewtopic.php?f=14&t=87357
+
+	https://forum.videolan.org/viewtopic.php?f=14&t=72862
+
+	http://stackoverflow.com/questions/7798242/keyboard-mouse-input-in-c
+
+	http://stackoverflow.com/questions/6630623/capture-all-keyboard-input
+
+	http://stackoverflow.com/questions/6962156/is-there-a-way-to-not-wait-for-a-system-command-to-finish-in-c
+
+	http://www.codeproject.com/Articles/1264/KeyBoard-Hooks
+
+	http://stackoverflow.com/questions/16401628/uninstalling-keyboard-hook-when-the-user-leaves-the-application
+
+	http://msdn.microsoft.com/en-us/library/windows/desktop/ms644960(v=vs.85).aspx
+
+	http://stackoverflow.com/questions/4576182/the-easiest-way-to-draw-an-image
+
+	http://www.cplusplus.com/forum/general/28469/
+
+	https://www.google.com/search?q=c%2B%2B+transparent+window&oq=c%2B%2B+transparent+&aqs=chrome.1.69i57j0l3.4981j0j1&sourceid=chrome&ie=UTF-8#q=c%2B%2B+transparent+background+window
+
+	http://www.cplusplus.com/forum/windows/37855/
+
+	http://cboard.cprogramming.com/cplusplus-programming/64563-wm_paint-function-how-call-again.html
+
+	http://www.robertelder.ca/doublebuffering/
+
+	https://wiki.videolan.org/VLC-0-9-x_command-line_help/
+
+	http://resque.wordpress.com/2012/04/13/add-a-file-to-the-current-vlc-playlist-from-the-terminal-command-line/
+
+	http://stackoverflow.com/questions/849728/determining-the-network-connection-link-speed
+
+	http://www.cplusplus.com/forum/beginner/12216/
+
+	http://www.rohitab.com/discuss/topic/38617-get-the-state-of-capslock/
+
+	http://stackoverflow.com/questions/8640208/what-is-the-fastest-way-to-determine-a-key-press-and-key-holding-in-win32
+
+	http://msdn.microsoft.com/en-us/library/windows/desktop/dd375731(v=vs.85).aspx
+
+	http://stackoverflow.com/questions/1939953/how-to-find-if-a-given-key-exists-in-a-c-stdmap
+
+	http://stackoverflow.com/questions/8581832/converting-a-vector-to-string
+
+	http://en.kioskea.net/faq/31532-automatically-enqueue-items-to-current-playlist-when-running-vlc-in-single-instance-mode
+
+	http://stackoverflow.com/questions/852856/win32-c-creating-a-popup-window-without-stealing-focus
+
+	http://stackoverflow.com/questions/7442939/opening-a-window-that-has-no-title-bar-with-win32
+
+	http://www.gamedev.net/topic/608057-how-do-you-create-a-win32-window-from-console-application/
+
+	http://stackoverflow.com/questions/5364063/how-to-check-if-window-is-always-on-top
+
+	http://stackoverflow.com/questions/7245169/creating-a-text-label-with-a-transparent-background-using-winapi
+
+	http://stackoverflow.com/questions/10888766/win32-based-applications-trying-to-update-the-text-of-the-label
+
+	http://www.cplusplus.com/reference/mutex/mutex/lock/
+
+	http://stackoverflow.com/questions/15148057/what-does-stdthread-join-do
+
+	http://stackoverflow.com/questions/3463471/how-to-set-background-color-of-window-after-i-have-registered-it
+
+	http://stackoverflow.com/questions/8690619/how-to-get-screen-resolution-in-c
+
+	http://forums.codeguru.com/showthread.php?479703-Creating-a-label-(WinAPI)
+
+	http://stackoverflow.com/questions/7055183/how-can-i-clear-the-input-buffer-in-a-c-application
+
+	3.Open Network stream (ctrl-n)
+	4.type in url
+	5.play!	
+
+	find vlc.exe in your program files
+	create shortcut and paste shortcut in same folder as my program.exe

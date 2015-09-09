@@ -1,0 +1,33 @@
+# Input acronyms/ incomplete words here that you use often, followed by what you really meant so that it will still sound proper.
+# hot text will only be converted if it is separated from other text by spaces 
+# (e.g. 'exampleikr' = 'exampleikr', while 'example ikr' = 'example I know right')
+# Syntax: What you type in = 'what is said'
+# hot text NOT case sensitive and the text on the left (what you type in) cannot have spaces. However, the output (text on right) may have spaces.
+
+ikr='I know right'
+wtf='what the fuck'
+wth='what the hell'
+sht='shit'
+gaf='give a fuck'
+idgaf='I don't give a fuck'
+ty='thank you'
+stfu='shut the fuck up'
+lol='hahaha'
+dafuq='the fuck'
+ASAP='a s a p'
+gtfo='g t f o'
+lmao='llamao'
+rofl='roffle'
+sry='sorry'
+hmm='hin'
+fk='fuck'
+fker='fucker'
+fking='fucking'
+\sob='son of a bitch'
+lmgtfy='let me google that for you'
+gth='go to hell'
+wht='what'
+omfg='oh my fucking goodness'
+omg='oh my goodness'
+idc='i don't care'
+idk='i don't know'
